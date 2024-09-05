@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Kérdőív</title>
 </head>
 <body>
     <div class="container">
+
         <h1>Kérdőív</h1>
-        <form action="">
+        <form action="" id="elso">
             <p>Mi Magyarország fővárosa?</p>
             <input type="radio" id="bp" name="fav_language" value="Budapest">
             <label for="html">Budapest</label><br>
@@ -20,16 +21,22 @@
             <input type="radio" id="nagymaros" name="fav_language" value="Nagymaros">
             <label for="html">Nagymaros</label><br>
             <br>
+        </form>
+        
+        <form action="" id="masodik">
             <p>Melyik évet írjuk</p>
             <input type="radio" id="2002" name="fav_language" value="2002">
             <label for="html">2002</label><br>
             
             <input type="radio" id="2024" name="fav_language" value="2024">
             <label for="html">2024</label><br>
-
+    
             <input type="radio" id="2042" name="fav_language" value="2042">
-            <label for="html">2042</label><br>
-            <input type="button" value="Gomb">
+            <label for="html">2042</label><br> <br>
+            <input type="button" value="Gomb" onclick="valami()">
+            
+            <p id="valasz"></p>
+
         </form>
         
 
